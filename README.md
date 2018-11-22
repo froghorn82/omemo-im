@@ -1,4 +1,4 @@
-![logo](/art/icon.png)
+<p align="center">![logo](/art/icon.png)</p>
 <h1 align="center">OMEMO Instant Messenger</h1>
 
 <p align="center">OMEMO IM: Simple & Secure Instant Messaging</p>
