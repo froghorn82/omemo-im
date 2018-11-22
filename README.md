@@ -12,8 +12,8 @@ OMEMO IM: Simple & Secure Instant Messaging
 
     - A free to use community chat server "omemo.im" integrated into it's client.
     - A newer blue App color design with matching logo.
-    - Enables ordinary users to more easily understand account creation process by simplifying the description and removing technical jargon at startup.
-    - Enables Client State Indication by default to mimic other WhatsApp style Messengers that show when your contact was last online.
+    - Easier to understand account creation wizard for ordinary users by simplifying description and removing technical jargon at startup.
+    - Client State Indication is enabled by default to mimic other WhatsApp style Messengers that show when your contact was last online.
     - Removed Green Background on received messages option by default because it doesn't look cool.
 
 
@@ -99,9 +99,7 @@ feature is regarded experimental. Conversations is the only client that uses
 XEP-0027 with conferences. (The XEP neither specifically allows nor disallows
 this.)
 
-#### What is Blind Trust Before Verification / why are messages marked with a red lock?
-
-Read more about the concept on https://gultsch.de/trust.html
+Note: Future build versions of OMEMO Instant Messenger visions to remove OpenPGP and force the use of OMEMO E2EE only. Such that it is not possible to send an non-E2EE message from it.
 
 ### What clients do I use on other platforms
 There are XMPP Clients available for all major platforms.
@@ -119,5 +117,3 @@ Make sure to have ANDROID_HOME point to your Android SDK. Use the Android SDK Ma
     git clone https://github.com/froghorn82/omemo-im.git
     cd omemo-im
     ./gradlew assembleCompat or assembleFree
-
-# omemo-im
