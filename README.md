@@ -1,6 +1,6 @@
-<h1 align="center">Conversations</h1>
+<h1 align="center">OMEMO Instant Messenger</h1>
 
-<p align="center">Conversations: the very last word in instant messaging</p>
+<p align="center">OMEMO IM: Simple & Secure Instant Messaging</p>
 
 <p align="center">
     <a href="https://conversations.im/j/conversations@conference.siacs.eu">
@@ -54,7 +54,7 @@
 
 ### XMPP Features
 
-Conversations works with every XMPP server out there. However XMPP is an
+OMEMO Instant Messenger works with every XMPP server out there. However XMPP is an
 extensible protocol. These extensions are standardized as well in so called
 XEP's. Conversations supports a couple of these to make the overall user
 experience better. There is a chance that your current XMPP server does not
@@ -86,44 +86,28 @@ run your own XMPP server for you and your friends. These XEP's are:
 
 ### General
 
-#### How do I install Conversations?
+#### How do I install OMEMO Instant Messenger?
 
-Conversations is entirely open source and licensed under GPLv3. So if you are a
+OMEMO IM is entirely open source and licensed under GPLv3. So if you are a
 software developer you can check out the sources from GitHub and use Gradle to
 build your apk file.
 
-The more convenient way — which not only gives you automatic updates but also
-supports the further development of Conversations — is to buy the App in the
-Google [Play Store](https://play.google.com/store/apps/details?id=eu.siacs.conversations&referrer=utm_source%3Dgithub).
-
-Buying the App from the Play Store will also give you access to our [beta test](#beta).
-
 #### I don't have a Google Account but I would still like to make a contribution
 
-I accept donations over PayPal, bank transfer and various crypto currencies. For donations via PayPal you
-can use the email address `donate@siacs.eu` or the button below.
+I accept donations over PayPal, bank transfer and various crypto currencies. Contact us as JID: contact@omemo.im to contribute.
 
-[![Donate with PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CW3SYT3KG5PDL)
-
-**Disclaimer:** I'm not a huge fan of PayPal and their business policies. For
-larger contributions please get in touch with me beforehand and we can talk
-about bank transfer (SEPA).
 
 ##### Crypto currencies
 
-Bitcoin: `1AeqNAcg85APAZj9BZfAjdFCC5zesqXp2B`
+Bitcoin: `
 
-Bitcoin Cash: `16ABkXzYAwWz8Y5DcWFfbBRqL63g3hzEaU`
-
-Ether: `0x5c4e5239cd9c6f4a909e4e8361526e2e3c8ba9fa`
 
 #### How do I create an account?
-XMPP, like email, is a federated protocol, which means that there is not one company you can create an *official XMPP account* with. Instead there are hundreds, or even thousands, of providers out there. One of those providers is our very own [conversations.im](https://account.conversations.im). If you don’t like to use *conversations.im* use a web search engine of your choice to find another provider. Or maybe your university has one. Or you can run your own. Or ask a friend to run one. Once you've found one, you can use Conversations to create an account. Just select *register new account* on server within the create account dialog.
+XMPP, like email, is a federated protocol, which means that there is not one company you can create an *official XMPP account* with. Instead there are hundreds, or even thousands, of providers out there. One of those providers is our very own [conversations.im](https://account.conversations.im). If you don’t like to use *omemo.im* check our https://omemo.im/servers.html to find another provider. Or maybe your university has one. Or you can run your own. Or ask a friend to run one. Once you've found one, you can use OMEMO IM to create an account. Just select *register new account* on server within the create account dialog.
 
 ##### Domain hosting
 Using your own domain not only gives you a more recognizable Jabber ID, it also gives you the flexibility to migrate your account between different XMPP providers. This is a good compromise between the responsibilities of having to operate your own server and the downsides of being dependent on a single provider.
 
-Learn more about [conversations.im Jabber/XMPP domain hosting](https://account.conversations.im/domain/). 
 
 ##### Running your own
 If you already have a server somewhere and are willing and able to put the necessary work in, one alternative-in the spirit of federation-is to run your own. We recommend either [Prosody](https://prosody.im/) or [ejabberd](https://www.ejabberd.im/). Both of which have their own strengths. Ejabberd is slightly more mature nowadays but Prosody is arguably easier to set up.
@@ -133,12 +117,12 @@ For Prosody you need a couple of so called [community modules](https://modules.p
 If you pick ejabberd make sure you use the latest version. Linux Distributions might bundle some very old versions of it.
 
 #### Where can I set up a custom hostname / port
-Conversations will automatically look up the SRV records for your domain name
+OMEMO IM will automatically look up the SRV records for your domain name
 which can point to any hostname port combination. If your server doesn’t provide
 those please contact your admin and have them read
 [this](http://prosody.im/doc/dns#srv_records). If your server operator is unwilling
 to fix this you can enable advanced server settings in the expert settings of
-Conversations.
+OMEMO IM.
 
 #### I get 'Incompatible Server'
 
@@ -149,62 +133,9 @@ If you are a server administrator you should make sure that your server provides
 either STARTTLS or [XEP-0368: SRV records for XMPP over TLS](https://xmpp.org/extensions/xep-0368.html).
 
 On rare occasions this error message might also be caused by a server not providing
-a login (SASL) mechanism that Conversations is able to handle. Conversations supports
+a login (SASL) mechanism that OMEMO IM is able to handle. OMEMO IM supports
 SCRAM-SHA1, PLAIN, EXTERNAL (client certs) and DIGEST-MD5.
 
-#### I get 'Bind failure'. What does that mean?
-
-Some Bind failures are transient and resolve themselves after a reconnect.
-
-When trying to connect to OpenFire the bind failure can be a permanent problem when the domain part of the Jabber ID entered in Conversations doesn’t match the domain the OpenFire server feels responsible for. For example OpenFire is configured to use the domain `a.tld` but the Jabber ID entered is `user@b.tld` where `b.tld` also points to the same host. During bind OpenFire tries to reassign the Jabber to `user@a.tld`. Conversations doesn’t like that.
-This can be fixed by creating a new account in Conversations that uses the Jabber ID `user@a.tld`. 
-
-Note: This is kind of a weird quirk in OpenFire. Most other servers would just throw a 'Server not responsible for domain' error instead of attempting to reassign the Jabber ID.
-
-Maybe you attempted to use the Jabber ID `test@b.tld` because `a.tld` doesn’t point to the correct host. In that case you might have to enable the extended connection settings in the expert settings of Conversations and set a host name.
-
-#### I’m getting this annoying permanent notification
-Starting with Conversations 2.3.6 Conversations releases distributed over the Google Play Store will display a permanent notification if you are running it on Android 8 and above. This is a rule that it is essentially enforced by the Google Play Store (you won’t have the problem if you are getting your app from F-Droid).
-
-However you can disable the notification via settings of the operating system. (Not settings in Conversations.). For that you can long press the permanent notification and disable that particular type of notification by moving the slider to the left. This will make the notification disappear but create another notification (this time created by the operating system itself.) that will complain about Conversations (and other apps) using battery. Starting with Android 8.1 you can disable that notification again with the same method described above.
-
-The battery consumption and the entire behaviour of Conversations will remain the same (as good or as bad as it was before). Why is Google doing this to you? We have no idea.
-
-P.S.: For Android version up to and including 7.1 the foreground notification is still controlled over the expert settings within Conversations as it always has been.
-
-#### How do XEP-0357: Push Notifications work?
-You need to be running the Play Store version of Conversations and your server needs to support push notifications.¹ Because *Google Cloud Notifications (GCM)* are tied with an API key to a specific app your server can not initiate the push message directly. Instead your server will send the push notification to the Conversations App server (operated by us) which then acts as a proxy and initiates the push message for you. The push message sent from our App server through GCM doesn’t contain any personal information. It is just an empty message which will wake up your device and tell Conversations to reconnect to your server. The information sent from your server to our App server depends on the configuration of your server but can be limited to your account name. (In any case the Conversations App server won't redirect any information through GCM even if your server sends this information.)
-
-In summary Google will never get hold of any personal information besides that *something* happened. (Which doesn’t even have to be a message but can be some automated event as well.) We - as the operator of the App server - will just get hold of your account name (without being able to tie this to your specific device).
-
-If you don’t want this simply pick a server which does not offer Push Notifications or build Conversations yourself without support for push notifications. (This is available via a gradle build flavor.) Non-play store source of Conversations like the Amazon App store will also offer a version without push notifications. Conversations will just work as before and maintain its own TCP connection in the background.
-
- ¹ Your server only needs to support the server side of [XEP-0357: Push Notifications](http://xmpp.org/extensions/xep-0357.html). If you use the Play Store version you do **not** need to run your own app server. The server modules are called *mod_cloud_notify* on Prosody and *mod_push* on ejabberd.
-
-#### Conversations doesn’t work for me. Where can I get help?
-
-You can join our conference room on `conversations@conference.siacs.eu`.
-A lot of people in there are able to answer basic questions about the usage of
-Conversations or can provide you with tips on running your own XMPP server. If
-you found a bug or your app crashes please read the Developer / Report Bugs
-section of this document.
-
-#### I need professional support with Conversations or setting up my server
-
-I'm available for hire. Contact me at `inputmice@siacs.eu`.
-
-#### How does the address book integration work?
-
-The address book integration was designed to protect your privacy. Conversations
-neither uploads contacts from your address book to your server nor fills your
-address book with unnecessary contacts from your online roster. If you manually
-add a Jabber ID to your phones address book Conversations will use the name and
-the profile picture of this contact. To make the process of adding Jabber IDs to
-your address book easier you can click on the profile picture in the contact
-details within Conversations. This will start an "add to address book" intent
-with the JID as the payload. This doesn't require Conversations to have write
-permissions on your address book but also doesn't require you to copy/paste a
-JID from one app to another.
 
 #### I get 'delivery failed' on my messages
 
@@ -367,71 +298,19 @@ Unfortunately we don‘t have a recommendation for iPhones right now. There are 
 ### Development
 
 <a name="beta"></a>
-#### Beta testing
-If you bought the App on [Google Play](https://play.google.com/store/apps/details?id=eu.siacs.conversations)
-you can get access to the the latest beta version by signing up using [this link](https://play.google.com/apps/testing/eu.siacs.conversations).
 
-#### How do I build Conversations
+#### How do I build OMEMO Instant Messenger
 
 Make sure to have ANDROID_HOME point to your Android SDK. Use the Android SDK Manager to install missing dependencies.
 
-    git clone https://github.com/siacs/Conversations.git
-    cd Conversations
-    ./gradlew assembleConversationsFreeSystemDebug
+    git clone git@github.com:froghorn82/omemo-im.git
+    cd omemo-im
+    ./gradlew assembleFreeCompat
 
 There are two build flavors available. *free* and *playstore*. Unless you know what you are doing you only need *free*.
 
 
 [![Build Status](https://travis-ci.org/siacs/Conversations.svg?branch=development)](https://travis-ci.org/siacs/Conversations)
 
-#### How do I update/add external libraries?
 
-If the library you want to update is in Maven Central or JCenter (or has its own
-Maven repo), add it or update its version in `build.gradle`. If the library is
-in the `libs/` directory, you can update it using a subtree merge by doing the
-following (using `minidns` as an example):
-
-    git remote add minidns https://github.com/rtreffer/minidns.git
-    git fetch minidns
-    git merge -s subtree minidns master
-
-To add a new dependency to the `libs/` directory (replacing "name", "branch" and
-"url" as necessary):
-
-    git remote add name url
-    git merge -s ours --no-commit name/branch
-    git read-tree --prefix=libs/name -u name/branch
-    git commit -m "Subtree merged in name"
-
-#### How do I debug Conversations
-
-If something goes wrong Conversations usually exposes very little information in
-the UI (other than the fact that something didn't work). However with adb
-(android debug bridge) you can squeeze some more information out of Conversations.
-These information are especially useful if you are experiencing trouble with
-your connection or with file transfer.
-
-To use adb you have to connect your mobile phone to your computer with an USB cable
-and install `adb`. Most Linux systems have prebuilt packages for that tool. On
-Debian/Ubuntu for example it is called `android-tools-adb`.
-
-Furthermore you might have to enable 'USB debugging' in the Developer options of your
-phone. After that you can just execute the following on your computer:
-
-    adb -d logcat -v time -s conversations
-
-If need be there are also some Apps on the PlayStore that can be used to show the logcat
-directly on your rooted phone. (Search for logcat). However in regards to further processing
-(for example to create an issue here on Github) it is more convenient to just use your PC.
-
-#### I found a bug
-
-Please report it to our [issue tracker][issues]. If your app crashes please
-provide a stack trace. If you are experiencing misbehavior please provide
-detailed steps to reproduce. Always mention whether you are running the latest
-Play Store version or the current HEAD. If you are having problems connecting to
-your XMPP server your file transfer doesn’t work as expected please always
-include a logcat debug output with your issue (see above).
-
-[issues]: https://github.com/siacs/Conversations/issues
 # omemo-im
