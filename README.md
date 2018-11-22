@@ -124,10 +124,4 @@ Make sure to have ANDROID_HOME point to your Android SDK. Use the Android SDK Ma
     cd omemo-im
     ./gradlew assembleCompat or assembleFree
 
-There are two build flavors available. *free* and *playstore*. Unless you know what you are doing you only need *free*.
-
-
-[![Build Status](https://travis-ci.org/siacs/Conversations.svg?branch=development)](https://travis-ci.org/siacs/Conversations)
-
-
 # omemo-im
