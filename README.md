@@ -1,5 +1,5 @@
 ![logo](/art/icon.png)
-<h1 align="center">OMEMO Instant Messenger</h1>
+<h1 align="left">OMEMO Instant Messenger</h1>
 
 OMEMO IM: Simple & Secure Instant Messaging
 
