@@ -13,7 +13,7 @@ OMEMO IM: Simple & Secure Instant Messaging
     - A free to use community chat server "omemo.im" integrated into it's client.
     - A newer blue App color design with matching logo.
     - Easier to understand account creation wizard for ordinary users by simplifying description and removing technical jargon at startup.
-    - Client State Indication is enabled by default to mimic other WhatsApp style Messengers that show when your contact was last online.
+    - Client State Indication is enabled by default to mimic other WhatsApp style Messengers that show when your contact was last seen online.
     - Removed Green Background on received messages option by default because it doesn't look cool.
 
 
@@ -21,8 +21,6 @@ OMEMO IM: Simple & Secure Instant Messaging
 
 * End-to-end encryption with [OMEMO](http://conversations.im/omemo/) or [OpenPGP](http://openpgp.org/about/)
 * Send and receive images as well as other kind of files
-* Share your location via an external [plug-in](https://play.google.com/store/apps/details?id=eu.siacs.conversations.sharelocation&referrer=utm_source%3Dgithub)
-* Send voice messages via an external [plug-in](https://play.google.com/store/apps/details?id=eu.siacs.conversations.voicerecorder&referrer=utm_source%3Dgithub)
 * Indication when your contact has read your message
 * Intuitive UI that follows Android Design guidelines
 * Pictures / Avatars for your Contacts
@@ -99,7 +97,7 @@ feature is regarded experimental. Conversations is the only client that uses
 XEP-0027 with conferences. (The XEP neither specifically allows nor disallows
 this.)
 
-Note: Future build versions of OMEMO Instant Messenger visions to remove OpenPGP and force the use of OMEMO E2EE only. Such that it is not possible to send an non-E2EE message from it.
+Note: Future build versions of OMEMO Instant Messenger envisions to remove OpenPGP as well as Unencrypted and force the use of OMEMO E2EE only. Such that it is not possible to send an non-E2EE message from the client.
 
 ### What clients do I use on other platforms
 There are XMPP Clients available for all major platforms.
