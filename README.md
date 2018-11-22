@@ -4,7 +4,6 @@
 OMEMO IM: Simple & Secure Instant Messaging
 
 
-
 ## Intro 
 
 * OMEMO Instant Messenger is a clean rebuild of the popular Android Jabber client "[Conversations](http://conversations.im/)". It includes minor graphical and user friendly feature improvements consisting of:
@@ -30,12 +29,6 @@ OMEMO IM: Simple & Secure Instant Messaging
 * Address book integration
 * Multiple accounts / unified inbox
 * Very low impact on battery life
-
-
-
-##### Crypto currencies
-
-Bitcoin: `
 
 
 #### How do I create an account?
