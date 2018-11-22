@@ -77,10 +77,10 @@ android {
         versionCode 299
         versionName "2.3.6"
         archivesBaseName += "-$versionName"
-        applicationId "eu.siacs.conversations"
+        applicationId "im.omemo"
         resValue "string", "applicationId", applicationId
-        resValue "string", "app_name", "Conversations"
-        buildConfigField "String", "LOGTAG", "\"conversations\""
+        resValue "string", "app_name", "OMEMO.IM"
+        buildConfigField "String", "LOGTAG", "\"omemo\""
     }
 
     dataBinding {
@@ -102,22 +102,13 @@ android {
 
     productFlavors {
 
-        quicksy {
-            dimension "mode"
-            applicationId = "im.quicksy.client"
-            resValue "string", "app_name", "Quicksy"
-            resValue "string", "applicationId", applicationId
-            buildConfigField "String", "LOGTAG", "\"quicksy\""
-        }
+
 
         conversations {
             dimension "mode"
         }
 
-        playstore {
-            dimension "distribution"
-            versionNameSuffix "+p"
-        }
+       
         free {
             dimension "distribution"
             versionNameSuffix "+f"
@@ -133,44 +124,13 @@ android {
     }
 
     sourceSets {
-        quicksyFreeCompat {
-            java {
-                srcDirs 'src/freeCompat/java'
-            }
-        }
-        quicksyPlaystoreCompat {
-            java {
-                srcDirs 'src/playstoreCompat/java'
-            }
-            res {
-                srcDir 'src/playstoreCompat/res'
-                srcDir 'src/quicksyPlaystore/res'
-            }
-        }
-        quicksyPlaystoreSystem {
-            res {
-                srcDir 'src/quicksyPlaystore/res'
-            }
-        }
+       
         conversationsFreeCompat {
             java {
                 srcDirs 'src/freeCompat/java'
             }
         }
-        conversationsPlaystoreCompat {
-            java {
-                srcDirs 'src/playstoreCompat/java'
-            }
-            res {
-                srcDir 'src/playstoreCompat/res'
-                srcDir 'src/conversationsPlaystore/res'
-            }
-        }
-        conversationsPlaystoreSystem {
-            res {
-                srcDir 'src/conversationsPlaystore/res'
-            }
-        }
+       
     }
 
     buildTypes {

@@ -9,7 +9,7 @@
     <bool name="treat_vibrate_as_silent">false</bool>
     <bool name="confirm_messages">true</bool>
     <bool name="chat_states">true</bool>
-    <bool name="last_activity">false</bool>
+    <bool name="last_activity">true</bool>
     <bool name="vibrate_on_notification">true</bool>
     <bool name="led">true</bool>
     <bool name="enable_quiet_hours">false</bool>
@@ -18,7 +18,7 @@
     <integer name="auto_accept_filesize">524288</integer>
     <string name="picture_compression">auto</string>
     <string name="theme">light</string>
-    <bool name="use_green_background">true</bool>
+    <bool name="use_green_background">false</bool>
     <bool name="send_button_status">false</bool>
     <string name="quick_action">recent</string>
     <bool name="show_dynamic_tags">false</bool>

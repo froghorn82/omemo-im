@@ -13,7 +13,7 @@
    height="26"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:version="0.48.5 r10040"
    sodipodi:docname="message_bubble_received.svg">
   <defs
      id="defs4">
@@ -62,14 +62,14 @@
      inkscape:pageshadow="2"
      inkscape:zoom="16"
      inkscape:cx="25.745257"
-     inkscape:cy="12.118802"
+     inkscape:cy="9.618802"
      inkscape:document-units="px"
-     inkscape:current-layer="layer"
+     inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="989"
-     inkscape:window-height="704"
-     inkscape:window-x="581"
-     inkscape:window-y="51"
+     inkscape:window-height="755"
+     inkscape:window-x="22"
+     inkscape:window-y="16"
      inkscape:window-maximized="0"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -82,52 +82,44 @@
        visible="true"
        enabled="true"
        snapvisiblegridlinesonly="true"
-       spacingx="1"
-       spacingy="1"
-       originx="0"
-       originy="0"
+       spacingx="1px"
+       spacingy="1px"
+       originx="0px"
+       originy="0px"
        color="#0000ff"
        opacity="0.03137255" />
     <sodipodi:guide
        orientation="1,0"
        position="20,26"
-       id="guide3060"
-       inkscape:locked="false" />
+       id="guide3060" />
     <sodipodi:guide
        orientation="1,0"
        position="24,26"
-       id="guide3062"
-       inkscape:locked="false" />
+       id="guide3062" />
     <sodipodi:guide
        orientation="0,1"
        position="36,22"
-       id="guide3064"
-       inkscape:locked="false" />
+       id="guide3064" />
     <sodipodi:guide
        orientation="0,1"
        position="36,6"
-       id="guide3066"
-       inkscape:locked="false" />
+       id="guide3066" />
     <sodipodi:guide
        orientation="1,0"
        position="26,0"
-       id="guide3068"
-       inkscape:locked="false" />
+       id="guide3068" />
     <sodipodi:guide
        orientation="1,0"
        position="18,0"
-       id="guide3070"
-       inkscape:locked="false" />
+       id="guide3070" />
     <sodipodi:guide
        orientation="0,1"
        position="0,10"
-       id="guide3074"
-       inkscape:locked="false" />
+       id="guide3074" />
     <sodipodi:guide
        orientation="0,1"
        position="0,8"
-       id="guide3076"
-       inkscape:locked="false" />
+       id="guide3076" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -137,7 +129,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -169,17 +161,5 @@
          width="20"
          id="rect2987" />
     </g>
-    <path
-       style="fill:#2c5aa0;stroke-width:0.0625"
-       d="m 13.457757,21.898093 c -0.544939,-0.167551 -1.028566,-0.593827 -1.272667,-1.121745 -0.132648,-0.286878 -0.133699,-0.325651 -0.150199,-5.5389 l -0.01662,-5.25 L 8.0348906,6.0025336 4.051507,2.0176192 l 13.21875,0.016164 13.21875,0.016164 0.353784,0.1737364 c 0.388529,0.190799 0.719468,0.5190768 0.940384,0.9328223 l 0.143332,0.2684413 v 8.5624998 8.5625 l -0.144533,0.293429 c -0.184472,0.374517 -0.562521,0.752566 -0.937038,0.937038 l -0.293429,0.144533 -8.46875,0.01059 c -4.657813,0.0058 -8.539063,-0.01103 -8.625,-0.03745 z"
-       id="path3731"
-       inkscape:connector-curvature="0"
-       transform="translate(0,2)" />
-    <path
-       style="fill:#2c5aa0;stroke-width:0.0625"
-       d="M 13.13657,21.733872 C 12.777569,21.554974 12.44685,21.22014 12.232339,20.818389 l -0.143332,-0.268441 -0.01827,-5.28125 -0.01827,-5.28125 L 8.0707377,6.0022049 4.089007,2.0169617 l 13.21875,0.039995 13.21875,0.039995 0.364614,0.1911237 c 0.375396,0.196775 0.678553,0.5128995 0.909542,0.9484474 l 0.132094,0.2490745 v 8.5190397 c 0,8.455893 -9.5e-4,8.520896 -0.127707,8.769367 -0.1844,0.361453 -0.538052,0.729633 -0.900584,0.937577 l -0.315459,0.180944 -8.565854,5.62e-4 -8.565853,5.63e-4 -0.32073,-0.159826 z"
-       id="path3752"
-       inkscape:connector-curvature="0"
-       transform="translate(0,2)" />
   </g>
 </svg>

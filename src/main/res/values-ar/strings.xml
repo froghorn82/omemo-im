@@ -1,5 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
+  <string name="pref_omemo_setting">تشفير الاوميمو </string>
+  <string name="default_on">شغال تلقاءيا</string>
+  <string name="default_off">بدون</string>
+  
+  <string name="magic_create_text">سنرشدك خلال عملية إنشاء حساب على omemo.im.¹ \ n عند اختيار omemo.im كموفر ، ستتمكن من التواصل مع المستخدمين الآخرين من خلال تزويدهم بـ XMPP / Jabber ID الكامل.</string>
+  <string name="welcome_header">بدء الدردشة بشكل آمن</string>
+  <string name="welcome_text">"ال XMPP هي شبكة مراسلات فورية لامركزية. يمكنك استخدام هذا العميل مع خادم XMPP من اختيارك. \ n لنجعلك تبدأ بتسهيل إنشاء حساب على omemo.im ؛؛ مقدم مناسبة خصيصا للاستخدام OMEMO في التشفير من النهاية إلى النهاية."</string>
   <string name="action_settings">الإعدادات</string>
   <string name="action_add">محادثة جديدة</string>
   <string name="action_accounts">إدارة الحسابات</string>
@@ -42,7 +49,7 @@
   <string name="block_domain_text">هل تريد حجب جميع جهات الإتصال من %s?</string>
   <string name="unblock_domain_text">الغاء حجب جميع جهات الإتصال من %s?</string>
   <string name="contact_blocked">جهة الاتصال محجوبه</string>
-  <string name="remove_bookmark_text">هل ترغب في حذف %s من المفضلات? المحادثات المحفوظه ستبقى كما هي</string>
+  <string name="remove_bookmark_text">هل ترغب في حذف %s من المفضلات? OMEMO ماسنجر المحفوظه ستبقى كما هي</string>
   <string name="register_account">تسجيل حساب جديد في سيرفر</string>
   <string name="change_password_on_server">تغيير كلمة المرور في سيرفر</string>
   <string name="share_with">مشاركة مع</string>
@@ -58,13 +65,13 @@
   <string name="unblock">الغاء حجب</string>
   <string name="save">حفظ</string>
   <string name="ok">موافق</string>
-  <string name="crash_report_title">توقف تطبيق المحادثات Conversations عن العمل</string>
+  <string name="crash_report_title">توقف تطبيق OMEMO ماسنجر عن العمل</string>
   <string name="crash_report_message">بموافقتك على ارسال تقارير الأخطاء ستساعد مبرمجي التطبيق على تحسين جودة التطبيق\n<b>تنويه:</b> سيرسل تقارير الأخطاء ان وجدت بأحد الحسابات التي أضفتها.</string>
   <string name="send_now">ارسال الآن</string>
   <string name="send_never">لا تسألني ثانية</string>
   <string name="problem_connecting_to_account">لا يمكن تسجيل الدخول لحسابك</string>
   <string name="problem_connecting_to_accounts">لا يمكن تسجيل الدخول بحساباتك</string>
-  <string name="touch_to_fix">المس الشاشه لعرض المحادثات</string>
+  <string name="touch_to_fix">المس الشاشه لعرض OMEMO ماسنجر</string>
   <string name="attach_file">ارفاق ملف</string>
   <string name="not_in_roster">جهة الاتصال ليست مضافه لديك هل ترغب في إضافتها ؟؟</string>
   <string name="add_contact">اضافة جهة اتصال</string>
@@ -86,16 +93,16 @@
   <string name="send_unencrypted">إرسال بدون تشفير</string>
   <string name="decryption_failed">فشل فك التشفير. ربما ليس لديك المفتاح الخاص الصحيح.</string>
   <string name="openkeychain_required">OpenKeychain</string>
-  <string name="openkeychain_required_long">Conversations :: يستخدم تطبيق آخر يسمى <b> OpenKeychain </b> لتشفير وفك تشفير الرسائل وإدارة المفاتيح العامة الخاصة بك  \n\nOpenKeychain تحت الرخصة GPLv3  و لتحميل التطبيق من جوجل بلاي \n\n <small>(وأعد تشغيل التطبيق مرة أخرى)</small></string>
+  <string name="openkeychain_required_long">OMEMO ماسنجر :: يستخدم تطبيق آخر يسمى <b> OpenKeychain </b> لتشفير وفك تشفير الرسائل وإدارة المفاتيح العامة الخاصة بك  \n\nOpenKeychain تحت الرخصة GPLv3  و لتحميل التطبيق من جوجل بلاي \n\n <small>(وأعد تشغيل التطبيق مرة أخرى)</small></string>
   <string name="restart">إعادة التشغيل</string>
   <string name="install">تثبيت</string>
   <string name="openkeychain_not_installed">قم بتثبيت OpenKeychain من فضلك</string>
   <string name="offering">عرض ..</string>
   <string name="waiting">انتظار ..</string>
   <string name="no_pgp_key">لم يتم العثور على أي مفتاح OpenPGP</string>
-  <string name="contact_has_no_pgp_key">Conversations::لا يستطيع تشفير الرساله\n\n<small>من فضلك أخبر صديقك بتنصيب تطبيق OpenPGP.</small></string>
+  <string name="contact_has_no_pgp_key">OMEMO ماسنجر::لا يستطيع تشفير الرساله\n\n<small>من فضلك أخبر صديقك بتنصيب تطبيق OpenPGP.</small></string>
   <string name="no_pgp_keys">لم يتم العثور على أية مفاتيح OpenPGP</string>
-  <string name="contacts_have_no_pgp_keys">Conversations::لا يستطيع تشفير الرساله\n\n<small>من فضلك أخبر صديقك بتنصيب تطبيق OpenPGP.</small></string>
+  <string name="contacts_have_no_pgp_keys">OMEMO ماسنجر::لا يستطيع تشفير الرساله\n\n<small>من فضلك أخبر صديقك بتنصيب تطبيق OpenPGP.</small></string>
   <string name="pref_general">عام</string>
   <string name="pref_accept_files">ضبط استقبال الملفات</string>
   <string name="pref_accept_files_summary">اقبل تلقائيا الملفات أقل من</string>
@@ -270,7 +277,7 @@
   <string name="account_details">تفاصيل الحساب</string>
   <string name="confirm">تأكيد</string>
   <string name="try_again">حاول مرة أخرى</string>
-  <string name="conversations_foreground_service">المحادثات</string>
+  <string name="conversations_foreground_service">اميمو ماسنجر</string>
   <string name="pref_keep_foreground_service">احتفظ بالتطبيق يعمل في المقدمة</string>
   <string name="pref_keep_foreground_service_summary">منع نظام التشغيل من انهاء اتصالك</string>
   <string name="pref_export_logs">تصدير التأريخ</string>
@@ -348,7 +355,7 @@
   <string name="pdf_document">مستند PDF</string>
   <string name="apk">تطبيق اندرويد</string>
   <string name="vcard">تواصل</string>
-  <string name="touch_to_open_conversations">ألمس لفتح تطبيق المحادثات</string>
+  <string name="touch_to_open_conversations">المس لفتح تطبيق اوميمو ماسنجر</string>
   <string name="avatar_has_been_published">تم نشر الصورة الرمزية !</string>
   <string name="sending_x_file">ارسال %s</string>
   <string name="offering_x_file">عرض %s</string>
@@ -424,8 +431,8 @@
   </plurals>
   <string name="load_more_messages">أظهر أكثر</string>
   <string name="shared_text_with_x">شارك النص عبر %s</string>
-  <string name="no_storage_permission">إنّ تطبيق المحادثات Conversations بحاجة إلى النفاذ إلى مساحة التخزين الخارجية</string>
-  <string name="no_camera_permission">إنّ تطبيق المحادثات Conversations بحاجة إلى النفاذ إلى آلة التصوير</string>
+  <string name="no_storage_permission">إنّ تطبيق OMEMO ماسنجر بحاجة إلى النفاذ إلى مساحة التخزين الخارجية</string>
+  <string name="no_camera_permission">إنّ تطبيق اوميمو ماسنجر  بحاجة إلى النفاذ إلى آلة التصوير</string>
   <string name="sync_with_contacts">المزامنة مع جهات الإتصال</string>
   <string name="notify_on_all_messages">اخبرني عند وصول أية رسالة</string>
   <string name="notify_only_when_highlighted">قم بإخطاري عندما يقوم أحدهم بذكري </string>
@@ -465,7 +472,7 @@
   <string name="gp_short">قصير</string>
   <string name="gp_medium">متوسط</string>
   <string name="gp_long">طويل</string>
-  <string name="pref_broadcast_last_activity_summary">دع جهات الاتصال الخاصة بك تعرف عندما تستخدم تطبيق المحادثات Conversations</string>
+  <string name="pref_broadcast_last_activity_summary">دع جهات الاتصال الخاصة بك تعرف عندما تستخدم تطبيق اوميمو ماسنجر </string>
   <string name="pref_privacy">الخصوصية</string>
   <string name="pref_theme_options">السمة</string>
   <string name="pref_theme_options_summary">إختر اللون المناسب</string>
