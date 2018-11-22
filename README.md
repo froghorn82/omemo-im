@@ -114,7 +114,7 @@ Zom or Chatsecure.
 
 Make sure to have ANDROID_HOME point to your Android SDK. Use the Android SDK Manager to install missing dependencies.
 
-    git clone git@github.com:froghorn82/omemo-im.git
+    git clone https://github.com/froghorn82/omemo-im.git
     cd omemo-im
     ./gradlew assembleCompat or assembleFree
 
