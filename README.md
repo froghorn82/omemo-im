@@ -11,9 +11,9 @@ OMEMO IM: Simple & Secure Instant Messaging
 
     - A free to use community chat server "omemo.im" integrated into it's client.
     - A newer blue App color design with matching logo.
-    - Enable ordinary users to more easily understand account creation process by simplifying the description and removing technical jargon at startup.
-    - Enable Client State Indication by default to mimic other WhatsApp style Messengers that show when your contact was last online.
-    - Remove Green Background option by default because it doesn't look cool.
+    - Enables ordinary users to more easily understand account creation process by simplifying the description and removing technical jargon at startup.
+    - Enables Client State Indication by default to mimic other WhatsApp style Messengers that show when your contact was last online.
+    - Removed Green Background on received messages option by default because it doesn't look cool.
 
 
 ## Features
